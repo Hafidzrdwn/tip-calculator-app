@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+
+<body>
+  <div class="main-box">
+    <div class="head-logo">
+      <img src="images/logo.svg" alt="">
+    </div>
+    <div class="container">
+      <div class="calculation-box">
+        <div class="bill-box">
+          <label for="bill" class="input-label">Bill</label>
+          <div class="input-box">
+            <img src="images/icon-dollar.svg" draggable="false" alt="dollar icon">
+            <input id="bill" type="number" min="0" placeholder="0" autocomplete="off" class="input-calculate rtl">
+          </div>
+        </div>
+        <div class="tip-box">
+          <label class="input-label">Select Tip %</label>
+          <div class="input-group">
+            <div class="tip-check-box" data-val="5">
+              <p class="tip-nominal">5%</p>
+            </div>
+            <div class="tip-check-box" data-val="10">
+              <p class="tip-nominal">10%</p>
+            </div>
+            <div class="tip-check-box" data-val="15">
+              <p class="tip-nominal">15%</p>
+            </div>
+            <div class="tip-check-box" data-val="25">
+              <p class="tip-nominal">25%</p>
+            </div>
+            <div class="tip-check-box" data-val="50">
+              <p class="tip-nominal">50%</p>
+            </div>
+            <div class="tip-input-box">
+              <input type="number" placeholder="Custom" min="0" class="tip-input-custom rtl" autocomplete="off">
+            </div>
+          </div>
+        </div>
+        <div class="people-box">
+          <label for="people" class="input-label">Number of People</label>
+          <p class="error-msg">Can't be zero</p>
+          <div class="input-box">
+            <img src="images/icon-person.svg" class="input-icon" alt="">
+            <input id="people" type="number" class="input-calculate rtl" min="0" placeholder="0" autocomplete="off">
+          </div>
+        </div>
+      </div>
+      <div class="results-box">
+        <div class="result-box-nominal">
+          <div class="result-box-detail">
+            <div class="result-desc">
+              <p class="desc-title">Tip Amount</p>
+              <span class="desc-subtitle">/ person</span>
+            </div>
+            <div class="result-nominal">
+              <p id="tip-amount-result">$0.00</p>
+            </div>
+          </div>
+          <div class="result-box-detail">
+            <div class="result-desc">
+              <p class="desc-title">Total</p>
+              <span class="desc-subtitle">/ person</span>
+            </div>
+            <div class="result-nominal">
+              <p id="total-amount-result">$0.00</p>
+            </div>
+          </div>
+        </div>
+        <button id="btnReset" disabled>RESET</button>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> |
+      Coded by <a href="https://www.instagram.com/hafidzrdwn/" target="_blank">Hafidzrdwn</a>.
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
