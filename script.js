@@ -68,8 +68,6 @@ function checkError() {
     errorMsg.style.display = "none"
 
     const result = calculateSplitter(billValue, tipValue, peopleValue)
-    console.log(`Bill:$${billValue} , Tip:${tipValue}% , ${peopleValue} peoples`)
-    console.log(result)
 
     tipAmountResult.textContent = `$${result.tipAmount}`
     totalAmountResult.textContent = `$${result.total}`
